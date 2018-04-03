@@ -1,0 +1,76 @@
+/**index.wxss**/
+.container {
+  width: 750rpx;
+  background-color: #F2f2f2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  overflow-x: hidden
+}
+.header{
+position: absolute;
+top: 0;
+  width: 100%;
+  height: 400rpx;
+}
+.header .slide-image{
+  width: 100%;
+  height: 400rpx;
+  display: inline-block;
+  overflow: hidden;
+}
+.swiper_container swiper{
+  height: 400rpx;
+}
+.swiper_container .mask{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom:0;
+  opacity:0.3;
+  background:-webkit-linear-gradient(top,#d3d3d3,#808080 60%,#000)
+}
+.swiper_container .swiper_title{
+  padding: 16rpx;
+  position: absolute;
+  bottom: 16rpx;
+  color: #F2f2f2
+}
+.main{
+  width: 100%;
+  position: absolute;
+  top: 400rpx;
+  background-color: #f9f5f5;
+}
+.main .topic{
+  /* width: 100%; */
+  flex: 1;
+  margin: 40rpx;
+  text-align: left;
+  font-size: 32rpx;
+  color: #b9b9b9;
+  line-height: 32rpx
+}
+.main .card{
+display: flex;
+background: #ffffff;
+margin: 30rpx;
+box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+}
+.main .card .content{
+  vertical-align: middle;
+  flex: 3;
+  margin: 20rpx;
+  font-size: 32rpx;
+}
+.main .card .pic{
+  flex: 2
+}
+.main .card .pic image{
+  padding: 20rpx;
+  max-width: 200rpx;
+  max-height:160rpx
+}

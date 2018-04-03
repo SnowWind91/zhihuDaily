@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/detail/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "仿知乎日报",
+    "navigationBarTextStyle":"black"
+  }
+}

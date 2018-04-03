@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="header">
+    <view class='swiper_container'>
+      <swiper indicator-dots="{{indicatorDots}}" indicator-color="rgba(192,192,192,.5)" indicator-active-color="#ffffff" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{top_stories}}" wx:key="{{item.id}}">
+          <swiper-item bindtap="toDetail" data-id="{{item.id}}">
+            <image src="{{item.image}}" class="slide-image" />
+            <view class='mask'></view>
+            <view class='swiper_title'> {{item.title}}</view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  <view class="main">
+    <view class="topic">今日热闻</view>
+    <view class="card_list" wx:for="{{stories}}" wx:key="{{item.id}}">
+      <view class='card' bindtap='toDetail({{item.id}})' bindtap="toDetail" data-id="{{item.id}}">
+        <view class='content'>{{item.title}}</view>
+        <view class='pic'>
+          <image src='{{item.images[0]}}'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
